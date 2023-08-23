@@ -11,6 +11,9 @@
     --grey: rgba(46, 47, 66, 0.70);
     --light-slate: #8E8F99;
     --green: #31D0AA;
+    --tr-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --tr-duration: 250ms;
+    --transition: var(--tr-function) var(--tr-duration);
 }
 *{
     margin: 0;
@@ -569,21 +572,23 @@ nav.logo{
 }
 
 .modal-close {
-	position: absolute;
-	inset: 1em 1em auto auto;
-    fill: var(--cornflower-color);
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.10);
+	background-color: var(--cornflower-color);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: var(--navyblue-color);
+    cursor: pointer;
     
 }
 .modal-close:hover{
-    position: absolute;
-	inset: 1em 1em auto auto;
-    fill: var(--ocean-color);
-    stroke-width: 1px;
-    stroke: white;
-    border-radius: 50%; 
+    background-color: var(--ocean-color);
+    fill: var(--white);
+    transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
 }
 .is-hidden {
 	opacity: 0;
