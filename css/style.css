@@ -582,7 +582,7 @@ nav.logo{
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--navyblue-color);
     cursor: pointer;
-    
+    padding: auto;
 }
 .modal-close:hover{
     background-color: var(--ocean-color);
