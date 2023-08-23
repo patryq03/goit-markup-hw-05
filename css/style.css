@@ -574,7 +574,6 @@ nav.logo{
     fill: var(--cornflower-color);
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
-    flex-shrink: 0;
     border-radius: 50%;
     
 }
@@ -584,8 +583,7 @@ nav.logo{
     fill: var(--ocean-color);
     stroke-width: 1px;
     stroke: white;
-    flex-shrink: 0;
-    border-radius: 50%;   
+    border-radius: 50%; 
 }
 .is-hidden {
 	opacity: 0;
