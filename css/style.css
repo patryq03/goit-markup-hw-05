@@ -236,6 +236,11 @@ li{
 }
 .lia:hover, .lia:focus{
     color: var(--ocean-color);
+    border-radius: 2px;
+    border-bottom: 4px solid var(--ocean-color);
+    padding-bottom: 20px;
+    width: 48px;
+    flex-shrink: 0;
 }
 .contact{
     color: var(--slate-color); 
@@ -566,15 +571,22 @@ nav.logo{
 .modal-close {
 	position: absolute;
 	inset: 1em 1em auto auto;
-    fill: var(--cornflower, #E7E9FC);
+    fill: var(--cornflower-color);
     stroke-width: 1px;
     stroke: rgba(0, 0, 0, 0.10);
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
     border-radius: 50%;
+    
 }
-
+.modal-close:hover{
+    position: absolute;
+	inset: 1em 1em auto auto;
+    fill: var(--ocean-color);
+    stroke-width: 1px;
+    stroke: white;
+    flex-shrink: 0;
+    border-radius: 50%;   
+}
 .is-hidden {
 	opacity: 0;
 	pointer-events: none;
