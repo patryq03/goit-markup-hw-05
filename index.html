@@ -35,14 +35,17 @@
     <main>
         <section class="order section">
             <h1 class="solution">Effective Solutions<br>for Your Business</h1>
-            <button type="button" class="service">Order Service</button>
+            <button type="button" class="service" data-modal-open>Order Service</button>
             <div class="modal is-hidden" data-modal>
               <div class="modal-body">
                 <button class="modal-close" data-modal-close>
-                  <img src="close.jpg" alt="close icon" width="24px" height="24px">
+                  <svg>
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                  </svg>
                 </button>
               </div>
             </div>
+            
         </section>
         <section class="section"> 
             <div class="container">
@@ -347,5 +350,6 @@
         </ul>  
     </div>
     </footer>
+<script src="./js/modal.js"></script>  
 </body>
 </html>

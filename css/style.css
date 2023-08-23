@@ -55,8 +55,12 @@ footer{
 }
 .photos.bigger_p, .photos.smaller_p{
     padding-inline: 16px;
-}
+    gap: 8px;
 
+}
+.person>img{
+    height: 260px;
+}
 .down.logo{
     padding-bottom: 17.5px;
 }
@@ -117,7 +121,7 @@ button{
     letter-spacing: 0.04em;
     
 }
-button:hover, button:focus{
+.buttons_list_button:hover, .buttons_list_button:focus{
     background-color: var(--ocean-color);
     color: var(--white);
     font-family: Roboto, sans-serif;
@@ -142,6 +146,8 @@ li{
     background-color: var(--cloud-color);
     width: 1440px;
     flex-shrink: 0;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .order{
     background-image:linear-gradient(hsl(237 18% 22% / 0.7), hsl(237 18% 22% / 0.7)), url(https://s3-alpha-sig.figma.com/img/7c8d/46d4/7e83b6c8ee4603ea892aa8aaebb3c5fe?Expires=1692576000&Signature=KO~Vbp0Gu~cNDdcig1kHmiqoU-xMxCTiczyV98t14TQgL7-yqIeRRyT5LsxCfV42WPtFpZUB6EcuXq9CWi2p4w-6XYavwct5BkPk-OW-5i55vmi9C~jUeWb8M4fpSJGXJ46r3XZgM6zyWdRd59nb0w5SJPixrhzKXYv2RPXnv0ndSNlnvMHrcK4Q8Pz3uFQI-TfJDbKnri4HBDBAkpkiA6EIRe5oPJ5ZyRAflUr6r~P2i78L-OTFbtsNx67urwW6B0HpCT2XQ-MRcyiV93sQUJ7muMa2Fa1MDYE5VYODLRd0OcW0vw7V7qgG6DIdcHi7BCwGJl2BVAEozh-WuIm2Bg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
@@ -192,22 +198,36 @@ li{
     padding-top: 32px;
     padding-bottom: 8px;
     padding-inline: 16px;
+    
    
+}
+.photos .bigger_p{
+    border-inline: 1px solid var(--cornflower-color);
 }
 .smaller_p{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em; 
-    padding-bottom: 32px;  
+    padding-bottom: 8px;  
     padding-inline: 16px;
+
 }   
+.photos .smaller_p{
+    border-inline: 1px solid var(--cornflower-color);
+    border-bottom: 1px solid var(--cornflower-color);
+    padding-bottom: 32px;
+}
 .person>.bigger_p{
     text-align: center;
 }
 .person>.smaller_p{
     text-align: center;
 }
-
+.project-card-caption {
+    padding: 32px 16px 32px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
 .lia{
     font-weight: 500;
     color: var(--navyblue-color);
@@ -273,12 +293,13 @@ address{
     color: var(--navyblue-color);
     padding-bottom: 72px;
 }
-.example-headers-third>{
+.example-headers-third{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navyblue-color);
+    display: flex;
 }
 
 .list{
@@ -317,6 +338,9 @@ button.service{
 }
 .service:hover, .service:focus{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: var(--ocean-color);
+    color: var(--white);
+    font-family: Roboto, sans-serif;
 }
 .buttons_images{
     margin-left: auto;
@@ -359,8 +383,10 @@ button.service{
     align-items: flex-start;
     gap: 32px;
     flex-shrink: 0;
-    border: 1px solid var(--cornflower-color);
     margin-top: 48px;   
+}
+.jpg>img{
+    margin-bottom: -7px;
 }
 nav.logo{
     padding-block: 25.5px;
@@ -474,8 +500,9 @@ nav.logo{
     border-radius: 4px;
   }
  .icon{
-        width: 16px;
-        height: 16px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
         
  }
  .circle-footer>a:hover{
@@ -517,3 +544,74 @@ nav.logo{
     border-radius: 50%;
     background-color: var(--iris-color);
 } 
+.modal {
+	position: fixed;
+	inset: 0;
+	background-color: rgb(0 0 0 / 0.5);
+	opacity: 1;
+	pointer-events: all;
+	visibility: visible;
+	transition: opacity 250ms;
+}
+
+.modal-body {
+	position: relative;
+	width: 408px;
+	height: 584px;
+	margin: auto;
+	background-color: #fff;
+	transition: scale 250ms;
+}
+
+.modal-close {
+	position: absolute;
+	inset: 1em 1em auto auto;
+    fill: var(--cornflower, #E7E9FC);
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10);
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.is-hidden .modal-body {
+	scale: 0;
+}
+
+.modal:not(.is-hidden) .modal-body {
+	scale: 1;
+}
+
+.card-image-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.photos>.jpg > img {
+	display: block;
+	width: 100%;
+	height: 100;
+	object-fit: cover;
+}
+
+.card-image-description {
+	position: absolute;
+	inset: 0;
+	background-color: var(--iris-color);
+	color: #fff;
+	translate: 0 100% 0;
+	transition: translate 250ms;
+    padding-top: 40px;
+    padding-inline: 32px;
+}
+
+.jpg:hover .card-image-description {
+	translate: 0;
+}
