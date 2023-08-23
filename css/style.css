@@ -583,6 +583,8 @@ nav.logo{
     fill: var(--navyblue-color);
     cursor: pointer;
     align-items: center;
+    padding-inline: 8px;
+    padding-block: 8px;
 }
 .modal-close:hover{
     background-color: var(--ocean-color);
