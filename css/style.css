@@ -237,7 +237,7 @@ li{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.lia:hover, .lia:focus{
+.lia:hover, .lia:focus, .index, .portfolio{
     color: var(--ocean-color);
     border-radius: 2px;
     border-bottom: 4px solid var(--ocean-color);
@@ -569,6 +569,7 @@ nav.logo{
 	margin: auto;
 	background-color: #fff;
 	transition: scale 250ms;
+    margin-top: 80px;
 }
 
 .modal-close {
@@ -582,7 +583,6 @@ nav.logo{
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--navyblue-color);
     cursor: pointer;
-
 }
 .modal-close:hover{
     background-color: var(--ocean-color);
@@ -627,6 +627,6 @@ nav.logo{
     padding-inline: 32px;
 }
 
-.jpg:hover .card-image-description {
+.photos:hover .card-image-description {
 	translate: 0;
 }
