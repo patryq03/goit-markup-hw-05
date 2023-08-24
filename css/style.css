@@ -584,6 +584,9 @@ nav.logo{
     fill: var(--navyblue-color);
     cursor: pointer;
 }
+.modal-close>svg{
+	margin: 7.5px;		
+}
 .modal-close:hover{
     background-color: var(--ocean-color);
     fill: var(--white);
