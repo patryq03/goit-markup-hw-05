@@ -86,6 +86,7 @@ header{
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
     background: var(--white, #FFF);
     align-items: baseline;
+    padding-bottom: -1.5px;
 }
 
 .logo{
@@ -237,11 +238,11 @@ li{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.lia:hover, .lia:focus, .index, .portfolio{
+.lia:hover, .lia:focus, .current{
     color: var(--ocean-color);
     border-radius: 2px;
     border-bottom: 4px solid var(--ocean-color);
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     width: 48px;
     flex-shrink: 0;
 }
@@ -583,6 +584,7 @@ nav.logo{
     border: 1px solid rgba(0, 0, 0, 0.1);
     fill: var(--navyblue-color);
     cursor: pointer;
+    align-items: center;
 }
 .modal-close>svg{
 	margin: 7.5px;		
@@ -633,3 +635,7 @@ nav.logo{
 .photos:hover .card-image-description {
 	translate: 0;
 }
+.close {
+    width: 12px;
+    height: 12px;
+  }
