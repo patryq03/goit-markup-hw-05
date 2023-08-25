@@ -160,6 +160,7 @@ li{
     color: var(--white);
     width: 1440px;
     flex-shrink: 0;
+    margin-top: -5px;
 }
 
 .order>button{
@@ -242,7 +243,7 @@ li{
     color: var(--ocean-color);
     border-radius: 2px;
     border-bottom: 4px solid var(--ocean-color);
-    padding-bottom: 24px;
+    padding-bottom: 23.5px;
     width: 48px;
     flex-shrink: 0;
 }
@@ -403,6 +404,7 @@ nav.logo{
 .jpg{
     width: 360px;
     flex-shrink: 0;
+    margin-top: -32px;
 }
 .svg{
     width: 264px;
