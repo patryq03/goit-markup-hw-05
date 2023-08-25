@@ -588,9 +588,6 @@ nav.logo{
     cursor: pointer;
     align-items: center;
 }
-.modal-close>svg{
-	margin: 7.5px;		
-}
 .modal-close:hover{
     background-color: var(--ocean-color);
     fill: var(--white);
