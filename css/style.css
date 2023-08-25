@@ -640,5 +640,8 @@ nav.logo{
 .close {
     width: 12px;
     height: 12px;
+   
+  }
+  svg.close{
     margin: auto;
   }
